@@ -1,11 +1,4 @@
 #!/usr/bin/env ruby
-puts "Welcome to Tic Tac Toe!"
-board=[" "," "," "," "," "," "," "," "," "]
-puts "Where would you like to go?"
-input=gets.strip
-move(board,input_to_index(input),"X")
-display_board(board)
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -22,3 +15,11 @@ end
 def move(board,index,char="X")
   board[index]=char
 end
+
+puts "Welcome to Tic Tac Toe!"
+board=[" "," "," "," "," "," "," "," "," "]
+puts "Where would you like to go?"
+input=gets.strip
+move(board,input_to_index(input),"X")
+display_board(board)
+
