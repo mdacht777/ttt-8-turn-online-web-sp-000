@@ -1,5 +1,8 @@
 def turn(board)
   puts "Please enter 1-9:"
+  input=gets.strip
+  move(board,input_to_index(input),"X")
+  display_board(board)
 end
 
 def display_board(board)
