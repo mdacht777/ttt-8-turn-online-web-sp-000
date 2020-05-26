@@ -3,6 +3,7 @@ def turn(board)
   input=gets.strip
   move(board,input_to_index(input),"X")
   display_board(board)
+  turn(board)
 end
 
 def display_board(board)
