@@ -19,10 +19,3 @@ def move(board,index,char="X")
   board[index]=char
 end
 
-puts "Welcome to Tic Tac Toe!"
-board=[" "," "," "," "," "," "," "," "," "]
-puts "Where would you like to go?"
-input=gets.strip
-move(board,input_to_index(input),"X")
-display_board(board)
-
